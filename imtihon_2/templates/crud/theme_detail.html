@@ -1,0 +1,7 @@
+<!-- themes/templates/themes/theme_detail.html -->
+
+<h1>{{ theme.title }}</h1>
+<p>{{ theme.description }}</p>
+
+<a href="{% url 'theme_update' theme.pk %}">Update</a>
+<a href="{% url 'theme_delete' theme.pk %}">Delete</a>

@@ -1,0 +1,12 @@
+<!-- themes/templates/themes/theme_form.html -->
+
+<h1>Create/Update Theme</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" value="{{ theme.title }}"><br>
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description">{{ theme.description }}</textarea><br>
+    <button type="submit">Save</button>
+</form>
